@@ -2,6 +2,7 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: {{ .Release.Name }}
+  namespace: traefik
   labels:
     release: {{ .Release.Name }}
 spec:
@@ -14,5 +15,4 @@ spec:
         - name: {{ .Release.Name }}
       services:
         - name: {{ .Release.Name }}
-          port:
-            name: http
+          port: 80
