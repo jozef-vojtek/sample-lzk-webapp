@@ -12,7 +12,6 @@ spec:
       kind: Rule
       middlewares:
         - name: {{ .Release.Name }}
-        - name: headers-default@file
       services:
         - name: {{ .Release.Name }}
           port:
