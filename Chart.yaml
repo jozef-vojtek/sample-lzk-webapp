@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Hello LZK example app
+name: hello-world
+version: 1.0.0

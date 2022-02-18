@@ -1,0 +1,7 @@
+image: nginx:alpine
+host: awesome.super.com
+replicas: 1
+# Default creds (htpasswd -nb admin admin | openssl base64):
+#   user: admin
+#   password: admin
+creds: YWRtaW46JGFwcjEkRU8zRHQyWTkkbDhRZDVNem90WHpxUzBkSS9OSmJQLwoK
